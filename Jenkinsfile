@@ -1,4 +1,4 @@
-pipelin {
+pipeline {
     agent any
     stages {
         stage('Build') {
@@ -9,7 +9,7 @@ pipelin {
         }
         stage('Test') {
             steps {
-                sh './PES2UG20CS415-1'
+                shs './PES2UG20CS415-1'
             }
         }
     }
